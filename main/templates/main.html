@@ -1,6 +1,117 @@
-<h1>Welcome to SMarket!</h1>
+{% extends 'base.html' %}
 
-<h5>Name: </h5>
-<p>{{ name }}</p> <!-- Ubahlah sesuai dengan nama kamu -->
-<h5>Class: </h5>
-<p>{{ class }}</p> <!-- Ubahlah sesuai dengan kelas kamu -->
+{% block content %}
+<html>
+    <head>
+    <style>
+      h1 {
+        text-align: center;
+        color: rgb(243, 101, 124);
+        font-family:'Times New Roman', Times, serif;
+        font-style: oblique;
+      }
+    </style>
+    </head>
+    <body>
+        
+    <h1 >Welcome to SMarket !!</h1>
+    
+
+    <h4>Name:</h4>
+    <p>{{name}}</p>
+
+    <h4>Class:</h4>
+    <p>{{class}}</p>
+
+    <h4>Product:</h4>
+    <head>
+        <style>
+            table {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                border-collapse:unset;
+                width: 100%;
+            }
+
+            td, th {
+                border:1px solid rgb(241, 109, 131);
+                text-align: center;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: rgb(234, 192, 199);
+            }
+        </style>
+    </head>
+    <body>
+    <table>
+        <tr>
+            <th style="text-align:center">NAME</th>
+            <th style="text-align:center">PRICE</th>
+            <th style="text-align:center">DESCRIPTION</th>
+            <th style="text-align:center">DATE ADDED</th>
+        </tr>
+
+    
+        {% for product in products %}
+            <tr>
+                <td style="text-align:center">{{product.name}}</td>
+                <td style="text-align:center">{{product.price}}</td>
+                <td style="text-align:center">{{product.description}}</td>
+                <td style="text-align:center">{{product.date_added}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+    <br />
+    
+    <a href="{% url 'main:create_product' %}">
+        <html>
+            <head>
+            <style>
+            .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            }
+            .button {
+              border: none;
+              color: rgb(16, 16, 16);
+              padding: 16px 32px;
+              text-align: center;
+              text-decoration:solid;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              transition-duration: 0.4s;
+              cursor: pointer;
+              font-family:Georgia, 'Times New Roman', Times, serif
+            }
+            
+            .button1 {
+              background-color: white; 
+              color: black; 
+              border: 2px solid #e1a4c9;
+            }
+            
+            .button1:hover {
+              background-color: rgb(234, 192, 199);
+              color: rgb(11, 11, 11);
+            }
+            </style>
+            </head>
+            <body>
+            
+                <div class="center">
+                <button class="button button1">Add New Product</button>
+                </div>
+            
+            </body>
+            </html>
+    </a>
+
+{% endblock content %}
+
+
+
