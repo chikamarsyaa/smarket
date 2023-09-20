@@ -44,6 +44,7 @@ STEP :
 
 - MVVM (Model-View-ViewModel): Paradigma pengembangan perangkat lunak yang memisahkan Model (data), View (tampilan), dan ViewModel (perantara antara data dan tampilan), umumnya fokus terhadap pemisahan antara tampilan, logika, dan data.
 
+## ----------------------------------------------------------------------------------
 ## README TUGAS 3
 
 ### (1) Apa perbedaan antara form POST dan form GET dalam Django?
@@ -65,7 +66,21 @@ JSON mempermudah penerjemahan data ke bahasa manusia. Meskipun komputer hanya da
 
 ### (4) Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
 
-### (5) Screenshor hasil akses URL pada Postman.
+1. Buat file dengan nama forms.py
+Langkah pertama, kita perlu membuat file forms.py. File ini akan  berisi variabel sesuai dengan model yang telah didefinisikan di file models.py.
+
+2. Modifikasi file views.py
+Selanjutnya, kita perlu melakukan beberapa modifikasi pada file views.py. Pertama, buat fungsi baru bernama create product. Tujuannya untuk membuat produk sesuai input user. Kita juga perlu mengubah bagian fungsi show_main yang ada di dalam views.py agar setiap produk yang telah diinput dapat disimpan.
+
+3. Buat file create_product.html
+Setelah itu, kita perlu membuat file create_product.html sebagai tampilan untuk input produk. File ini memiliki tombol add new product yang dapat mengarahkan user ke page input produk. Setelah produk diinput, pengguna akan langsung kembali ke main page untuk melihat input produk.
+
+4. Routing 
+Langkah terakhir, kita akan melakukan routing pada semua fungsi yang telah kita buat. Kita dapat menambahkan beberapa import yang diperlukan pada file views.py, lalu tambahkan juga beberapa path baru untuk memanggil fungsi melalui URL. 
+Berikut adalah isi dari urls.py : 
+<img src="/Foto//urls.py.png">
+
+### (5) Screenshot hasil akses URL pada Postman.
 (a) HTML 
 <img src="/Foto//html.jpg">
 (b) XML 

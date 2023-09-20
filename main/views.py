@@ -11,7 +11,7 @@ def show_main(request):
     products = Item.objects.all()
 
     context = {
-        'name': 'Chika Marsya', 
+        'name': 'Chika Marsya Diandra ', 
         'class': 'PBP F', 
         'products': products
     }
