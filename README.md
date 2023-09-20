@@ -44,18 +44,18 @@ STEP :
 
 - MVVM (Model-View-ViewModel): Paradigma pengembangan perangkat lunak yang memisahkan Model (data), View (tampilan), dan ViewModel (perantara antara data dan tampilan), umumnya fokus terhadap pemisahan antara tampilan, logika, dan data.
 
-## ----------------------------------------------------------------------------------
+## ----------------------------------------------------------------------
 ## README TUGAS 3
 
 ### (1) Apa perbedaan antara form POST dan form GET dalam Django?
 --> Perbedaan utama antara metode POST dan GET dalam Django adalah bagaimana data dari formulir HTML dikirimkan ke server. Dalam metode POST, data formulir dikirim sebagai bagian dari tubuh permintaan HTTP, atau dapat dibilang data yang dikirimkan tidak ditampilkan secara terbuka pada URL browser. Sementara itu, dalam metode GET, data yang dikirimkan akan terlihat pada URL dan itu akan berguna untuk permintaan yang hanya mengambil informasi dari server tanpa melakukan perubahan pada data yang ada.
 
 ### (2) Apa perbedaan utama antara XML, JSON, dan HTML dalam konteks pengiriman data?
---> XML (Extensible Merkup Language) 
+- XML (Extensible Merkup Language) 
 XML adalah bahasa markup yang dirancang untuk menyimpan dan mengirim data struktural. XML sering digunakan dalam pertukaran data antara sistem yang berbeda karena fleksibilitasnya. Namun, XML cenderung memiliki format yang lebih panjang dan kompleks, sehingga membutuhkan lebih banyak bandwidth dan parsing yang lebih rumit.
---> JSON (JavaScript Object Notation)
+- JSON (JavaScript Object Notation)
 JSON adalah format pertukaran data yang ringan dan mudah dibaca oleh manusia.JSON lebih efisien dalam penggunaan bandwidth karena formatnya lebih ringkas dibandingkan dengan XML. JSON juga lebih mudah diproses oleh JavaScript.
---> HTML (Hypertext Markup Language)
+- HTML (Hypertext Markup Language)
 HTML adalah bahasa markup yang digunakan untuk membuat struktur dan tampilan halaman web. Meskipun tidak dirancang untuk pengiriman data, HTML dapat digunakan untuk menampilkan data dalam bentuk halaman web yang dapat diakses oleh pengguna melalui browser.
 
 ### (3) Mengapa JSON sering digunakan dalam pertukaran data antara aplikasi web modern?
