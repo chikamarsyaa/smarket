@@ -9,11 +9,11 @@ from django.core import serializers
 
 def show_main(request):
     products = Item.objects.all()
-
     context = {
-        'name': 'Chika Marsya Diandra ', 
-        'class': 'PBP F', 
-        'products': products
+        'name': 'Chika Marsya Diandra',
+        'class': 'PBP F',
+        'products': products,
+        'total_products': products.__len__(),
     }
 
     return render(request, "main.html", context)
