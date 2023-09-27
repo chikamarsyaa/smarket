@@ -103,12 +103,15 @@ Berikut adalah isi dari urls.py :
 ### (1) Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
 - Django UserCreationForm merupakan salah satu form yang disediakan oleh django, form ini dirancang khusus untuk membuat dan mendaftarkan pengguna baru dalam aplikasi web yang akan dibangun dengan Django. Form ini juga menyediakan beberapa fitur umum untuk proses pendaftaran, seperti username, password, dan kata sandi. 
 - Berikut adalah beberapa kelebihan dan kekurangan yang dimiliki oleh Django UserCreationForm :
-(+) Validasi Terintegrasi
-(+) Mudah untuk dikustomisasi sesuai dengan kebutuhan project
-(+) Form terhubungan dengan model bawaan django, sehingga menyederhanakan proses penyimpanan informasi ke dalam database
-
-(-) Terbatas pada fitur dasar
-(-) Tampilan default yang cukup sederhana
+---
+(+) Kelebihan
+- Validasi Terintegrasi
+- Mudah untuk dikustomisasi sesuai dengan kebutuhan project
+- Form terhubungan dengan model bawaan django, sehingga menyederhanakan proses penyimpanan informasi ke dalam database
+---
+(-) Kekurangan 
+- Terbatas pada fitur dasar
+- Tampilan default yang cukup sederhana
 
 ---
 ### (2) Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
