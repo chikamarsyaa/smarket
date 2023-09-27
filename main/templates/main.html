@@ -107,6 +107,14 @@
                 <div class="center">
                 <button class="button button1">Add New Product</button>
                 </div>
+
+                <h5>Sesi terakhir login: {{ last_login }}</h5>
+                
+                <a href="{% url 'main:logout' %}">
+                    <button>
+                        Logout
+                    </button>
+                </a>
             
             </body>
             </html>

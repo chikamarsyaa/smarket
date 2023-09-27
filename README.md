@@ -97,3 +97,62 @@ Berikut adalah isi dari urls.py :
 (e) JSON ID 
 <img src="/Foto//json[1].jpg">
 
+---
+## README TUGAS 4
+---
+### (1) Apa itu Django UserCreationForm, dan jelaskan apa kelebihan dan kekurangannya?
+- Django UserCreationForm merupakan salah satu form yang disediakan oleh django, form ini dirancang khusus untuk membuat dan mendaftarkan pengguna baru dalam aplikasi web yang akan dibangun dengan Django. Form ini juga menyediakan beberapa fitur umum untuk proses pendaftaran, seperti username, password, dan kata sandi. 
+- Berikut adalah beberapa kelebihan dan kekurangan yang dimiliki oleh Django UserCreationForm :
+(+) Validasi Terintegrasi
+(+) Mudah untuk dikustomisasi sesuai dengan kebutuhan project
+(+) Form terhubungan dengan model bawaan django, sehingga menyederhanakan proses penyimpanan informasi ke dalam database
+
+(-) Terbatas pada fitur dasar
+(-) Tampilan default yang cukup sederhana
+
+---
+### (2) Apa perbedaan antara autentikasi dan otorisasi dalam konteks Django, dan mengapa keduanya penting?
+-> Dalam konteks django, autentikasi dan otorisasi merupakan dua konsep yang sangat penting dalam mengelola akses pengguna kedalam aplikasi web. Perbedaan utama antara keduanya adalah : 
+1. Autentikasi 
+- Autentikasi adalah proses memverivikasi identitas pengguna, sistem akan mengonfirmasi apakah pengguna yang ingin mengakses aplikasi adalah orang yang sudah diklaim dalam website atau tidak. 
+- Pada Django, autentikasi melibatkan beberapa identitas pengguna seperti, username dan password.
+
+2. Otorisasi
+- Otorisasi adalah proses yang menentukan apa saja yang dapat dilakukan oleh user yang telah berhasil dalam proses autentikasi. Sistem mengontrol akses pengguna terhadap fitur dalam aplikasi. 
+- Pada Django, otorisasi dilakukan dengan memeriksa permission yang diberikan kepada penggguna. Permission ini dapat mengatur apakah pengguna memiliki hak akses untuk melakukan operasi tertentu, seperti mengedit atau menghapus data. 
+
+---
+### (3) Apa itu cookies dalam konteks aplikasi web, dan bagaimana Django menggunakan cookies untuk mengelola data sesi pengguna?
+- Cookies adalah istilah untuk kumpulan informasi yang berisi rekam jejak atau aktivitas ketika menelusuri sebuah website, atau secara sederhana Cookies merupakan kumpulan data yang diterima komputer dari sebuah situs dan mengirimkan kembali ke situs yang dikunjungi. 
+- Django menggunakan cookies untuk mengelola data sesi pengguna, seperti menyimpan data login pengguna, menyimpan data sesi, dan juga berfungsi untuk mengamankan cookie. Hal ini yang dapat membuat Django menyimpan informasi sesi pengguna dengan aman dan mengaksesnya kembali ketika pengguna melakukan permintaan ulang.
+
+---
+### (4) Apakah penggunaan cookies aman secara default dalam pengembangan web, atau apakah ada risiko potensial yang harus diwaspadai?
+-  Penggunaan cookies dalam pengembangan web adalah alat yang umum  digunakan untuk mengelola data sesi pengguna, tetapi ada beberapa risiko potensial yang harus diwaspadai, yaitu :
+1. Kebocoran data
+2. Serangan Cross-Site Scripting
+3. Serangan Man-In-The-middle   
+4. Saat cookies disimpan dalam log server, informasi sensitif dapat menjadi rentan jika log tersebut tidak diamankan.
+
+Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas yaitu : 
+1. Memastikan log server tidak mencatat informasi sensitif.
+2. Pastikan website menggunakan Perlindungan CSRF yang disediakan oleh Django atau modul terpercaya lainnya.
+3. Pastikan untuk mengaktifkan enkripsi cookie pada website. 
+
+---
+### (5) Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+- Mengaktifkan virtual environment terlebih dahulu 
+- Mengimpor beberapa modul yang diperlukan, seperti UserCreationForm
+- Membuat fungsi register untuk menghasilkan formulir registrasi secara otomatis
+- Membuat berkas HTML yang digunakan sebagai tampilan dari hasil form pendaftaran akun user ketika data telah disubmit.
+- Mengimpor fungsi "register" ke dalam berkas urls.py dan menambahkan path URL ke dalam urlpatterns.
+- Mengimpor fungsi login dengan nama "login_user" dan authenticate dengan langkah yang sama. 
+- Membuat fungsi logout, dengan mengimpor modul "logout"
+- Pada berkas main.html yang dimiliki oleh fungsi logout diperlukan sebuah tag hyperlink.
+- Untuk melakukan proses otorisasi, kita dapat menggunakan modul "login_required" untuk membatasi akses pengguna. 
+- Proses diatas dilakukan dengan menambahkan kode "@login_required(login_url='/login')" di atas fungsi show_main pada views.py agar halaman main hanya dapat diakses oleh pengguna yang sudah login (terautentikasi).
+- Selanjutnya, kita perlu membuat dua akun untuk menghubungkan Item dan Product, dengan cara menambahkan import User ke dalam models.py.
+- Melakukan beberapa modifikasi pada fungsi create_product di views.py agar Django dapat mengenali bahwa objek dimiliki oleh pengguna. 
+- Setelah itu, lakukan migrasi untuk menyimpan semua perubahan pada sistem. 
+
+
