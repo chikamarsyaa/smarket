@@ -1,45 +1,52 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block meta %}
     <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
 {% endblock meta %}
 
 {% block content %}
+<section>
+    <div class = "login">
 
-<div class = "login">
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: 700;">Login</h1>
 
-    <h1>Login</h1>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td style="font-family: 'Times New Roman', Times, serif;">Username: </td>
+                    <td><input type="text" name="username" placeholder="Username" style="font-family: 'Times New Roman', Times, serif;" class="form-control"></td>
+                </tr>
+                        
+                <tr>
+                    <td style="font-family: 'Times New Roman', Times, serif;" >Password: </td>
+                    <td><input style="font-family: 'Times New Roman', Times, serif;" type="password" name="password" placeholder="Password" class="form-control"></td>
+                </tr>
 
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
+                <tr>
+                    <td></td>
+                    <td><input style="font-family: 'Times New Roman', Times, serif; color: azure;"  class="btn login_btn" type="submit" value="Login"></td>
+                </tr>
+            </table>
+        </form>
 
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
+        {% if messages %}
+            <ul>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}     
         
-    Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a>
-
-</div>
+        <div class="akun" style="font-family: 'Times New Roman', Times, serif;">
+            Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a>
+        </div>
+    </div>
+</section>
 
 {% endblock content %}

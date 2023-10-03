@@ -2,33 +2,31 @@
 
 {% block meta %}
     <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% endblock meta %}
 
 {% block content %}  
+    <div style="background-color: #f0f6ff; text-align: center; padding: 20px; font-family: 'Times New Roman', Times, serif; min-width:50%">
+        <h1 style="background-color: #78aed3; color: #fff; padding: 20px; border-radius: 20px; box-shadow: 10px 10px 20px rgba(134, 35, 35, 0.1); max-width: 600px; margin: 0 auto;">Register</h1>  
 
-<div class = "login">
-    
-    <h1>Register</h1>  
-
-        <form method="POST" >  
+        <form method="POST" style="max-width: 600px; margin: 0 auto;">  
             {% csrf_token %}  
-            <table>  
+            <table style="width: 100%; text-align: left; padding: 10px; margin-top: 20px;">
                 {{ form.as_table }}  
                 <tr>  
                     <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
+                    <td><input type="submit" name="submit" value="Daftar" style="background-color: #2E86AB; color: #fff; cursor: pointer; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px;"></td>  
                 </tr>  
             </table>  
         </form>
 
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
+        {% if messages %}  
+            <ul style="list-style-type: none; padding: 0; font-size: small;">   
+                {% for message in messages %}  
+                    <li>{{ message }}</li>  
                 {% endfor %}  
-        </ul>   
-    {% endif %}
-
-</div>  
-
+            </ul>   
+        {% endif %}
+    </div>  
 {% endblock content %}
