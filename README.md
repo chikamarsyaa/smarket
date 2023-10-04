@@ -166,8 +166,8 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 - Selektor ID 
 -> Selektor ini berfungsi untuk memilih elemen HTML berdasarkan atribut ID. Atribut ID harus bersifat unik, dan selektor ini berguna saat kita ingin menerapkan style pada elemen tertentu. 
 
-- Element Style
--> Element ini berisi informasi gaya untuk dokumen atau bagian dari dokumen. Bisa dibuat dalam file yang berbeda yaitu CSS, yang nantinya file css akan dipanggil untuk menerapkan elemen dalam HTML.
+- Element Selector
+-> Element ini berfungsi untuk mengubah propert untuk semua elemen yang memiliki tag HTML yang sama. Kita dapat menggunakan element sebagai selector dalam file css. 
 
 - Selector Class
 -> Selector ini berfungsi untuk memilih elemen HTML berdasarkan atribut kelas. Syntax yang digunakan yaitu <div class = "profile"> maka selektor ini akan membantu menerapkan gaya pada class profile.
@@ -209,4 +209,6 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 
 ---
 ### (5) Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
-
+- Cara saya dalam mengerjakan tugas 5 ini adalah saya mencari beberapa referensi dari internet untuk tampilan - tampilan website yang menarik sehingga tampilan website saya lebih terlihat bagus dan rapih. 
+- Saya menggunakan bootstrap untuk mengatur navigation bar pada website saya, karena template yang diberikan oleh bootstrap lebih ringkas dan mudah dimengerti. Pada bagian navbar juga saya edit beberapa fiturnya seperti menambahkan fitur logout. 
+- Setelah itu langkah terakhirnya, saya mengatur desain - desain tiap page seperti edit product, add new product, login, register dengan referensi yang saya cari dari internet. Dan saya lakukan kustomisasi sesuai dengan warna warna yang saya inginkan

@@ -8,9 +8,9 @@
 
 {% block content %}
 <div style="text-align: center;">
-    <h1 style="background-color: #c3daff; color: #000000; padding: 20px; border-radius: 5px; font-family: 'Times New Roman', Times, serif;">Edit Product</h1>
+    <h1 style="background-color: #c3daff; color: #000000; padding: 20px; border-radius: 5px; font-family: 'Times New Roman', Times, serif; font-weight: 700;">Edit Product</h1>
 
-    <form method="POST" style="max-width: 400px; margin: 0 auto; text-align: left; margin-top: 20px; font-family: 'Times New Roman', Times, serif;">
+    <form method="POST" style="max-width: 400px; margin: 0 auto; text-align: left; margin-top: 20px; font-family: 'Times New Roman', Times, serif; font-weight: 500;">
         {% csrf_token %}
         <table style="width: 100%;">
             {{ form.as_table }}
