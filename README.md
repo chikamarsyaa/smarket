@@ -158,4 +158,55 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 - Melakukan beberapa modifikasi pada fungsi create_product di views.py agar Django dapat mengenali bahwa objek dimiliki oleh pengguna. 
 - Setelah itu, lakukan migrasi untuk menyimpan semua perubahan pada sistem. 
 
+---
+## README TUGAS 5
+---
+
+### (1) Jelaskan manfaat dari setiap element selector dan kapan waktu yang tepat untuk menggunakannya.
+- Selektor ID 
+-> Selektor ini berfungsi untuk memilih elemen HTML berdasarkan atribut ID. Atribut ID harus bersifat unik, dan selektor ini berguna saat kita ingin menerapkan style pada elemen tertentu. 
+
+- Element Style
+-> Element ini berisi informasi gaya untuk dokumen atau bagian dari dokumen. Bisa dibuat dalam file yang berbeda yaitu CSS, yang nantinya file css akan dipanggil untuk menerapkan elemen dalam HTML.
+
+- Selector Class
+-> Selector ini berfungsi untuk memilih elemen HTML berdasarkan atribut kelas. Syntax yang digunakan yaitu <div class = "profile"> maka selektor ini akan membantu menerapkan gaya pada class profile.
+
+- Selector Universal
+-> Selector ini berfungsi untuk memilih semua elemen pada HTML. Syntax yang digunakan yaitu "*". Selector ini dapat berguna ketika kita ingin menerapkan style yang sama pada seluruh elemen.
+
+---
+### (2) Jelaskan HTML5 Tag yang kamu ketahui.
+- <html>	--> untuk memulai dokumen HTML
+- <head>	--> untuk membuat bagian head
+- <body>	--> untuk membuat bagian body
+- <h1> sampai <h6>	--> untuk membuat heading pada artikel
+- <p>	    --> untuk membuat paragraf
+- <table>   --> untuk membuat sebuah tabel
+- <!-- -->	--> untuk membuat komentar
+
+---
+### (3) Jelaskan perbedaan antara margin dan padding.
+- MARGIN
+-> Margin merupakan sisi luar dari sebuah elemen, digunakan saat kita ingin mengatur jarak antar elemen. Ada beberapa syntax margin yang dapat digunakan, yaitu margin-top, margin-left, margin-right,dll. Namun, jika kita menggunakan syntax margin saja maka akan secara otomatis mengatur jarak atas, bawah, kiri, dan kanan elemen. Margin tidak memiliki background color. 
+
+- PADDING
+-> Padding merupakan sisi dalam dari sebuah elemen, digunakan untuk mengatur jarak pada sisi dalam sebuah elemen yang bisa kita tentukan. Padding juga memiliki beberapa syntax yang mirip dengan margin, yaitu padding-top, padding-left, padding-right,dll. Dan sama seperti margin, apabila hanya menulis syntax padding saja, maka posisi sudah diatur jarak atas, bawah, kiri, dan kanan elemen. Berbeda dengan margin, padding memilki background color yang bisa digunakan untuk elemen pada HTML.
+
+---
+### (4) Jelaskan perbedaan antara framework CSS Tailwind dan Bootstrap. Kapan sebaiknya kita menggunakan Bootstrap daripada Tailwind, dan sebaliknya?
+- Tailwind CSS dan Bootstrap adalah dua framework CSS yang populer dan digunakan untuk mempercepat pengembangan tampilan web. Kedua framewrok ini juga memiliki perbedaan, yaitu : 
+1. Tailwind CSS lebih memprioritaskan utilitas dan fleksibelitas dalam membuat design custom dengan menggunakan class yang sudah ditulis sebelumnya.
+2. Bootstrap lebih berfokus pada komopnen yang siap pakai dan responsive terhadap beberapa ukuran dan Bootstrap juga menyediakan tema dan template yang mudah untuk digunakan. 
+
+- Kapan kita menggunakan Tailwind CSS ?
+1. Saat kita menginginkan design dengan tingkat customization yang tinggi dan fleksible
+2. Saat ingin menghasilkan kode HTML yang lebih bersih tanpa tambahan kelas yang tidak perlu.
+
+- Kapan kita menggunakan Bootstrap ?
+1. Saat kita ingin membuat tampilan yang mudah digunakan dan cepat
+2. Bootstrap sangat cocok untuk situs web sederhana yang umum dan simple
+
+---
+### (5) Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
 
