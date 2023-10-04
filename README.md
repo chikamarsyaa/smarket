@@ -177,12 +177,12 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 
 ---
 ### (2) Jelaskan HTML5 Tag yang kamu ketahui.
-- <html>	--> untuk memulai dokumen HTML
-- <head>	--> untuk membuat bagian head
-- <body>	--> untuk membuat bagian body
-- <h1> sampai <h6>	--> untuk membuat heading pada artikel
-- <p>	    --> untuk membuat paragraf
-- <table>   --> untuk membuat sebuah tabel
+- <"html">	--> untuk memulai dokumen HTML
+- <"head">	--> untuk membuat bagian head
+- <"body">	--> untuk membuat bagian body
+- <"h1"> sampai <"h6">	--> untuk membuat heading pada artikel
+- <"p">	    --> untuk membuat paragraf
+- <"table">   --> untuk membuat sebuah tabel
 - <!-- -->	--> untuk membuat komentar
 
 ---
