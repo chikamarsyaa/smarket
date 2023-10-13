@@ -1,0 +1,33 @@
+.container {
+    margin-top: 50px;
+    padding: 20px; 
+    background-color: #f6f9ff; 
+    border-radius: 10px; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    width: auto;
+}
+
+
+.add-product-container {
+    width: 100%;
+    background-image: url("https://i.pinimg.com/originals/8c/bd/7e/8cbd7e449e8cbcd45368837ebab7ba5b.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #000000;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #c3daff;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}

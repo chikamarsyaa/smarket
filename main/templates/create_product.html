@@ -4,13 +4,13 @@
 {% block meta %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'css/create.css' %}">
-  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'css/add.css' %}">
+  <title>create</title>
 {% endblock meta %}
 
 {% block content %}
 <div class="add-product-container">
-    <h1 style="font-weight: 700;">Add New Product</h1>
+    <h1 style="font-weight: 700; margin-top: 20px; color: whitesmoke;">Add New Product</h1>
 
     <form method="POST" class="container">
         {% csrf_token %}

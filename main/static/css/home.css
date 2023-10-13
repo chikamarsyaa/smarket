@@ -5,6 +5,30 @@
     box-sizing: border-box;
 }
 
+tr:last-child td{
+    color: rgb(255, 255, 255); 
+    background-color: #171772;
+  }
+
+.btn-primary{
+    text-decoration: none;
+    padding: 5px 15px; /* Adjust padding for spacing (5px top and bottom, 15px left and right) */
+    margin: 5px; /* Add margin for spacing between buttons */
+    border-radius: 5px;
+    color: #ffffff;
+    background-color:darkblue;
+    width: 150px;
+}
+
+.body{
+    background-image: url("https://i.pinimg.com/originals/8c/bd/7e/8cbd7e449e8cbcd45368837ebab7ba5b.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 140vh;
+    margin: 0 auto;
+    width: auto;
+}
 section {
     text-align: center;
     margin: 30px;
@@ -22,7 +46,6 @@ section {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
 }
-
 .tampilan h3{
     text-align: center;
     margin-left: 10px;
@@ -40,11 +63,10 @@ section {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 {
-    margin: 20px 0;
+.body h1 {
     padding-top: 15px;
     text-align: center;
-    color: rgb(11, 10, 10);
+    color: rgb(255, 255, 255);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 

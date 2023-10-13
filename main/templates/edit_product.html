@@ -1,23 +1,24 @@
 {% extends 'base.html' %}
 
+{% load static %}
 {% block meta %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/edit.css' %}">
   <title>Edit</title>
 {% endblock meta %}
 
 {% block content %}
-<div style="text-align: center;">
-    <h1 style="background-color: #c3daff; color: #000000; padding: 20px; border-radius: 5px; font-family: 'Times New Roman', Times, serif; font-weight: 700;">Edit Product</h1>
-
-    <form method="POST" style="max-width: 400px; margin: 0 auto; text-align: left; margin-top: 20px; font-family: 'Times New Roman', Times, serif; font-weight: 500;">
+<div class="add-product-container">
+    <h1 style="font-family:'Times New Roman', Times, serif; font-weight: 700; margin-top: 50px; color: whitesmoke;">Edit Product</h1>
+    <form method="POST" class="container">
         {% csrf_token %}
-        <table style="width: 100%;">
+        <table style="margin: auto; text-align: left;">
             {{ form.as_table }}
             <tr>
                 <td></td>
                 <td>
-                    <input type="submit" value="Edit" style="background-color: #c3daff; color: #000000; cursor: pointer; padding: 10px 20px; border: none; border-radius: 5px; font-family: 'Times New Roman', Times, serif;">
+                    <input type="submit" value="Edit" class="button">
                 </td>
             </tr>
         </table>
