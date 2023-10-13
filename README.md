@@ -171,7 +171,7 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 </details>
 
 <details>
-<summary><b>Tugas 2</b></summary>
+<summary><b>Tugas 5</b></summary>
 ---
 ## README TUGAS 5
 ---
@@ -230,10 +230,10 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 </details>
 
 <details>
-<summary><b>Tugas 2</b></summary>
+<summary><b>Tugas 6</b></summary>
 
 ---
-## README TUGAS 5
+## README TUGAS 6
 ---
 
 ### 1. Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
