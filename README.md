@@ -242,28 +242,32 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 - Synchronous Programming 
 -> merupakan bagian dari Asynchronous (1 antrian) dimana proses akan dieksekusi secara bersamaan dan untuk hasil tergantung lama proses suatu fungsi synchronous. Synchronous programming memudahkan penulisan dan pemahaman program, tetapi bisa terasa lambat jika tindakan memerlukan waktu lama atau terjadi kesalahan.
 
+---
 ### 2. Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
 - Paradigma event-driven programming merupakan salah satu teknik pemrograman yang memiliki konsep kerja yang bergantung dari kejadian atau event tertentu. Pemrograman ini tetap memiliki input, proses, dan output. Pada event-driven programming, program tidak menjalankan operasi secara berurutan, melainkan menunggu dan merespons peristiwa yang terjadi asinkronus.
 
 - Dalam Tugas 6 ini menggunakan JavaScript dan AJAX, paradigma event-driven programming dapat diterapkan ketika program melakukan pengambilan dan penampilan produk pada halaman web. Saat user mengunjungi halaman tersebut, JavaScript dapat dengan responsif mengatasi peristiwa-peristiwa seperti ketika tombol "Add Product by AJAX" pada produk tertentu ditekan. Dalam kondisi ini, paradigma event-driven programming memungkinkan JavaScript untuk secara dinamis menginisiasi permintaan AJAX ke server saat tombol tersebut ditekan, dan kemudian menangani hasilnya tanpa perlu me-refresh seluruh halaman web.
 
+---
 ### 3. Jelaskan penerapan asynchronous programming pada AJAX.
 Penerapan asynchronus programming pada AJAX adalah ketika AJAX dapat menjadi tools yang kuat untuk mengambil dan mengirim data dari server tanpa mengganggu halaman web user. Sehingga hal ini menghasilkan responsibilitas yang baik, pengguna juga dapat tetap berinteraksi dengan halaman web tanpa harus menunggu permintaan data selesai. Dalam pemrograman asynchronus juga terdapat yang namanya "Callback Functions". Setelah respon server diterima, callback function akan dipanggil untuk mengelola data, menangani respons dari server, serta meningkatkan pengalaman pengguna secara keseluruhan.
 
+---
 ### 4. Pada PBP kali ini, penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan.
-a. Kompatibilitas Peramban:
-    - Fetch API cocok untuk peramban modern.
-    - jQuery lebih sesuai untuk peramban lama.
-b. Konversi Respons:
-    - Fetch API memiliki metode bawaan untuk mengubah respons menjadi berbagai tipe data.
-    - jQuery memerlukan penentuan jenis data di awal dengan opsi dataType.
-c. Kemudahan Penggunaan:
-    - jQuery menyediakan antarmuka lebih sederhana, terutama untuk tugas seperti pengiriman data JSON.
-    - Fetch API memberikan lebih banyak kontrol pada permintaan dan respons.
-d. Pengelolaan Respons Asinkron:
-    - Fetch API menggunakan Promise, menghindari masalah "callback hell."
-    - jQuery menggunakan callback yang lebih fleksibel.
+- Kompatibilitas Peramban:
+    -> Fetch API cocok untuk peramban modern.
+    -> jQuery lebih sesuai untuk peramban lama.
+-  Konversi Respons:
+    -> Fetch API memiliki metode bawaan untuk mengubah respons menjadi berbagai tipe data.
+    -> jQuery memerlukan penentuan jenis data di awal dengan opsi dataType.
+-  Kemudahan Penggunaan:
+    -> jQuery menyediakan antarmuka lebih sederhana, terutama untuk tugas seperti pengiriman data JSON.
+    -> Fetch API memberikan lebih banyak kontrol pada permintaan dan respons.
+-  Pengelolaan Respons Asinkron:
+    -> Fetch API menggunakan Promise, menghindari masalah "callback hell."
+    -> jQuery menggunakan callback yang lebih fleksibel.
 
+---
 ### 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
 - Step pertama, kita perlu membuat fungsi get_item_json pada views.ppy untuk mengambil data dalam bentuk JSON. Setelah itu membuat fungsi untuk menambahkan produk menggunakan AJAX dengan mengimport csrf_exempt dan tulis diatas fungsi baru bernama add_item_ajax.
 - Masuk ke page main.html lalu ambil item menggunakan fetch API dengan menambahkan tag block script dan membuat fungsi asynchronus getItems().
