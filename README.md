@@ -2,6 +2,8 @@
 
 # Kelas : PBP F
 
+<details>
+<summary><b>Tugas 2</b></summary>
 ---
 ## README TUGAS 2
 ---
@@ -45,6 +47,10 @@ STEP :
 
 - MVVM (Model-View-ViewModel): Paradigma pengembangan perangkat lunak yang memisahkan Model (data), View (tampilan), dan ViewModel (perantara antara data dan tampilan), umumnya fokus terhadap pemisahan antara tampilan, logika, dan data.
 
+</details>
+
+<details>
+<summary><b>Tugas 3</b></summary>
 ---
 ## README TUGAS 3
 ---
@@ -97,6 +103,10 @@ Berikut adalah isi dari urls.py :
 (e) JSON ID 
 <img src="/Foto//json[1].jpg">
 
+</details>
+
+<details>
+<summary><b>Tugas 4</b></summary>
 ---
 ## README TUGAS 4
 ---
@@ -158,6 +168,10 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 - Melakukan beberapa modifikasi pada fungsi create_product di views.py agar Django dapat mengenali bahwa objek dimiliki oleh pengguna. 
 - Setelah itu, lakukan migrasi untuk menyimpan semua perubahan pada sistem. 
 
+</details>
+
+<details>
+<summary><b>Tugas 2</b></summary>
 ---
 ## README TUGAS 5
 ---
@@ -212,3 +226,49 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 - Cara saya dalam mengerjakan tugas 5 ini adalah saya mencari beberapa referensi dari internet untuk tampilan - tampilan website yang menarik sehingga tampilan website saya lebih terlihat bagus dan rapih. 
 - Saya menggunakan bootstrap untuk mengatur navigation bar pada website saya, karena template yang diberikan oleh bootstrap lebih ringkas dan mudah dimengerti. Pada bagian navbar juga saya edit beberapa fiturnya seperti menambahkan fitur logout. 
 - Setelah itu langkah terakhirnya, saya mengatur desain - desain tiap page seperti edit product, add new product, login, register dengan referensi yang saya cari dari internet. Dan saya lakukan kustomisasi sesuai dengan warna warna yang saya inginkan
+
+</details>
+
+<details>
+<summary><b>Tugas 2</b></summary>
+
+---
+## README TUGAS 5
+---
+
+### 1. Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+- Asynchronous Programming
+-> Proses jalannya program dapat dilakukan secara bersamaan tanpa harus menunggu proses antrian. Asynchronous programming mengizinkan penundaan eksekusi, yang berarti function 2 dan seterusnya dapat dimulai tanpa harus menunggu function 1 hingga selesai
+- Synchronous Programming 
+-> merupakan bagian dari Asynchronous (1 antrian) dimana proses akan dieksekusi secara bersamaan dan untuk hasil tergantung lama proses suatu fungsi synchronous. Synchronous programming memudahkan penulisan dan pemahaman program, tetapi bisa terasa lambat jika tindakan memerlukan waktu lama atau terjadi kesalahan.
+
+### 2. Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma event-driven programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+- Paradigma event-driven programming merupakan salah satu teknik pemrograman yang memiliki konsep kerja yang bergantung dari kejadian atau event tertentu. Pemrograman ini tetap memiliki input, proses, dan output. Pada event-driven programming, program tidak menjalankan operasi secara berurutan, melainkan menunggu dan merespons peristiwa yang terjadi asinkronus.
+
+- Dalam Tugas 6 ini menggunakan JavaScript dan AJAX, paradigma event-driven programming dapat diterapkan ketika program melakukan pengambilan dan penampilan produk pada halaman web. Saat user mengunjungi halaman tersebut, JavaScript dapat dengan responsif mengatasi peristiwa-peristiwa seperti ketika tombol "Add Product by AJAX" pada produk tertentu ditekan. Dalam kondisi ini, paradigma event-driven programming memungkinkan JavaScript untuk secara dinamis menginisiasi permintaan AJAX ke server saat tombol tersebut ditekan, dan kemudian menangani hasilnya tanpa perlu me-refresh seluruh halaman web.
+
+### 3. Jelaskan penerapan asynchronous programming pada AJAX.
+Penerapan asynchronus programming pada AJAX adalah ketika AJAX dapat menjadi tools yang kuat untuk mengambil dan mengirim data dari server tanpa mengganggu halaman web user. Sehingga hal ini menghasilkan responsibilitas yang baik, pengguna juga dapat tetap berinteraksi dengan halaman web tanpa harus menunggu permintaan data selesai. Dalam pemrograman asynchronus juga terdapat yang namanya "Callback Functions". Setelah respon server diterima, callback function akan dipanggil untuk mengelola data, menangani respons dari server, serta meningkatkan pengalaman pengguna secara keseluruhan.
+
+### 4. Pada PBP kali ini, penerapan AJAX dilakukan dengan menggunakan Fetch API daripada library jQuery. Bandingkanlah kedua teknologi tersebut dan tuliskan pendapat kamu teknologi manakah yang lebih baik untuk digunakan.
+a. Kompatibilitas Peramban:
+    - Fetch API cocok untuk peramban modern.
+    - jQuery lebih sesuai untuk peramban lama.
+b. Konversi Respons:
+    - Fetch API memiliki metode bawaan untuk mengubah respons menjadi berbagai tipe data.
+    - jQuery memerlukan penentuan jenis data di awal dengan opsi dataType.
+c. Kemudahan Penggunaan:
+    - jQuery menyediakan antarmuka lebih sederhana, terutama untuk tugas seperti pengiriman data JSON.
+    - Fetch API memberikan lebih banyak kontrol pada permintaan dan respons.
+d. Pengelolaan Respons Asinkron:
+    - Fetch API menggunakan Promise, menghindari masalah "callback hell."
+    - jQuery menggunakan callback yang lebih fleksibel.
+
+### 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
+- Step pertama, kita perlu membuat fungsi get_item_json pada views.ppy untuk mengambil data dalam bentuk JSON. Setelah itu membuat fungsi untuk menambahkan produk menggunakan AJAX dengan mengimport csrf_exempt dan tulis diatas fungsi baru bernama add_item_ajax.
+- Masuk ke page main.html lalu ambil item menggunakan fetch API dengan menambahkan tag block script dan membuat fungsi asynchronus getItems().
+- Membuat fungsi asynchronous refreshProducts() dan refreshCards pada blok script untuk memunculkan table dan cards menggunakan AJAX dan merefresh data dari item serta mengupdate informasi jumlah item yang tersimpan secara asynchronous.
+- Membuat fungsi baru pada bagian script untuk menambahkan Item.
+- Step terakhir, melakukan perintah collecstatic dengan menjalankan mapping untuk output file static ke directory yang sesuai dengan memodifikasi bagian STATIC_URL dan STATIC_ROOT pada settings.py. lalu menjalankan perintah collectstatic pada terminal. 
+
+</details>
