@@ -225,7 +225,7 @@ Beberapa tindakan preventif yang dapat dilakukan untuk mencegah risiko diatas ya
 ### (5) Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas secara step-by-step (bukan hanya sekadar mengikuti tutorial).
 - Cara saya dalam mengerjakan tugas 5 ini adalah saya mencari beberapa referensi dari internet untuk tampilan - tampilan website yang menarik sehingga tampilan website saya lebih terlihat bagus dan rapih. 
 - Saya menggunakan bootstrap untuk mengatur navigation bar pada website saya, karena template yang diberikan oleh bootstrap lebih ringkas dan mudah dimengerti. Pada bagian navbar juga saya edit beberapa fiturnya seperti menambahkan fitur logout. 
-- Setelah itu langkah terakhirnya, saya mengatur desain - desain tiap page seperti edit product, add new product, login, register dengan referensi yang saya cari dari internet. Dan saya lakukan kustomisasi sesuai dengan warna warna yang saya inginkan
+- Setelah itu langkah terakhirnya, saya mengatur desain - desain tiap page seperti edit product, add new product, login, register dengan referensi yang saya cari dari internet. Dan saya lakukan kustomisasi sesuai dengan warna warna yang saya inginkan.
 
 </details>
 
